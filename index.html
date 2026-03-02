@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zando Project</title>
+    <title>
+        Zando Project</title>
     <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css.map">
     <link rel="stylesheet" href="./Bootstrap/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
@@ -18,136 +19,138 @@
       <!-- link header css -->
        <link rel="stylesheet" href="./style/header.css">
        <link rel="stylesheet" href="./style/banner.css">
+       <link rel="stylesheet" href="./style/main.css">
+       <link rel="stylesheet" href="./style/footer.css">
 </head>
 <body>
     <!-- header -->
-     <header class="container-fluid p-0 sticky-top">
-        <nav id="nav-top" class="container navbar px-3 p-lg-0 p-0">
-            <!-- menu -->
-             <ul class="nav d-none d-lg-flex"">
-                <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="">បុរស</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="">នារី</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="">ក្មេងប្រុស</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark fw-bold" href="">ក្មេងស្រី</a>
-                </li>
-             </ul>
-            <!-- logo and icons login  -->
-            <div class="navbar gap-3">
-                <!-- <img class="navbar-brand p-0" src="./assets/image/ZANDO-NEW-LOGO-2025.png" alt=""> -->
-                <a href="" class="fs-2 navbar-brand p-0 me-5 fw-bold">Zando</a>
-                <div class="navbar navbar-search gap-4 d-none d-lg-flex justify-content-between">
-                    <!-- search input -->
-                    
-                    <input type="text" placeholder="ស្វែងរក" class="form-control d-none d-lg-flex shadow-none px-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
-                    <i class="bi bi-search d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
-                    
-                    <!-- icon -->
-                
-                    <i class="bi bi-heart fs-5" style="cursor: pointer;"></i>
-                    <i class="bi bi-bag fs-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="cursor: pointer;"></i>
-                </div>
-                <div class="navbar gap-4 d-none d-lg-flex">
-                    <!-- button login and register -->
-                    <button class="btn btn-primary">ចូលគណនី</button>
-                    <button class="btn btn-primary">ចុះឈ្មោះ</button>
-                </div>
-                <i class="bi bi-list fs-1 d-none w-auto" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></i>
-            </div> 
-            <!-- icon sidebar -->
-             <div class="d-flex align-items-center gap-4 d-lg-none">
+    <header class="container-fluid p-0 sticky-top">
+    <nav id="nav-top" class="container navbar px-3 p-lg-0 p-0">
+        <!-- menu -->
+            <ul class="nav d-none d-lg-flex"">
+            <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="">បុរស</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="">នារី</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="">ក្មេងប្រុស</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="">ក្មេងស្រី</a>
+            </li>
+            </ul>
+        <!-- logo and icons login  -->
+        <div class="navbar gap-3">
+            <!-- <img class="navbar-brand p-0" src="./assets/image/ZANDO-NEW-LOGO-2025.png" alt=""> -->
+            <a href="" class="fs-2 navbar-brand p-0 me-5 fw-bold">Zando</a>
+            <div class="navbar navbar-search gap-4 d-none d-lg-flex justify-content-between">
                 <!-- search input -->
-                <i class="bi bi-search fs-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
+                
+                <input type="text" placeholder="ស្វែងរក" class="form-control d-none d-lg-flex shadow-none px-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
+                <i class="bi bi-search d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
+                
                 <!-- icon -->
             
                 <i class="bi bi-heart fs-5" style="cursor: pointer;"></i>
                 <i class="bi bi-bag fs-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="cursor: pointer;"></i>
-                <i class="bi bi-list fs-1 d-flex d-lg-none w-auto" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></i>
             </div>
-        </nav>
-        <nav id="nav-bottom" class="d-flex justify-content-center align-items-center text-light fw-bold" >
-            ចំណាយចាប់ពី​ 40$ FREE សេវាដឹកជញ្ជូន
-        </nav>
-        <!-- sidebar -->
-         <!-- offcanvas -->
-        <div class="offcanvas w-75 d-lg-none offcanvas-start" data-bs-scroll="true" tabindex="-1" id="sidebar" aria-labelledby="offcanvasWithBothOptionsLabel">
-            
-            <div class="offcanvas-header border-bottom">
-                <h3 class="text-dark fw-bold">Zando</h3>
-                <button type="button" class="btn-close bg-light shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="navbar gap-4 d-none d-lg-flex">
+                <!-- button login and register -->
+                <button class="btn btn-primary">ចូលគណនី</button>
+                <button class="btn btn-primary">ចុះឈ្មោះ</button>
             </div>
-
-            <div class="offcanvas-body p-0">
-                <ul class="nav flex-column">
-                    <li class="nav-item py-2">
-                        <a href="" class="nav-link text-dark fs-5">បុរស</a>
-                    </li>
-                    <li class="nav-item py-2">
-                        <a href="" class="nav-link text-dark fs-5">នារី</a>
-                    </li>
-                    <li class="nav-item py-2">
-                        <a href="" class="nav-link text-dark fs-5">ក្មេងប្រុស</a>
-                    </li>
-                    <li class="nav-item py-2">
-                        <a href="" class="nav-link text-dark fs-5">ក្មេងស្រី</a>
-                    </li>
-                    <li class="nav-item py-2">
-                        <button class="btn fs-5">ចូលគណនី</button>
-                    </li>
-                    <li class="nav-item py-2">
-                        <button class="btn fs-5">ចុះឈ្មោះ</button>
-                    </li>
-                </ul>
-            </div>
-
+            <i class="bi bi-list fs-1 d-none w-auto" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></i>
+        </div> 
+        <!-- icon sidebar -->
+            <div class="d-flex align-items-center gap-4 d-lg-none">
+            <!-- search input -->
+            <i class="bi bi-search fs-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
+            <!-- icon -->
+        
+            <i class="bi bi-heart fs-5" style="cursor: pointer;"></i>
+            <i class="bi bi-bag fs-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="cursor: pointer;"></i>
+            <i class="bi bi-list fs-1 d-flex d-lg-none w-auto" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></i>
         </div>
-        <!-- search offcanvas -->
-
-        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" >
-            <div class="container">
-                <div class="offcanvas-header pt-5 pb-3 border-bottom border-dark">
-                    <input type="text" placeholder="ស្វែងរកទំនិញ" class="form-control fs-5 shadow-none border-0">
-                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-            </div>
+    </nav>
+    <nav id="nav-bottom" class="d-flex justify-content-center align-items-center text-light fw-bold" >
+        ចំណាយចាប់ពី​ 40$ FREE សេវាដឹកជញ្ជូន
+    </nav>
+    <!-- sidebar -->
+        <!-- offcanvas -->
+    <div class="offcanvas w-75 d-lg-none offcanvas-start" data-bs-scroll="true" tabindex="-1" id="sidebar" aria-labelledby="offcanvasWithBothOptionsLabel">
+        
+        <div class="offcanvas-header border-bottom">
+            <h3 class="text-dark fw-bold">Zando</h3>
+            <button type="button" class="btn-close bg-light shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
-        <!-- shop-card-items -->
-         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Card Items</h5>
-                <button type="button" class="btn-close shadow-none d-flex justify-content-start" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <h3 class="text-shop d-flex justify-content-center">កន្រ្តកទំនិញរបស់អ្នកទទេ</h3>
-                <h6 class="text-items d-flex justify-content-center fs-4">តោះៗ! ចាប់ផ្តើម Shopping ទំនិញដែលទើបតែមកដល់ថ្មី និងទាន់សម័យ</h6>
-                ចាប់ផ្តើម Shopping
+        <div class="offcanvas-body p-0">
+            <ul class="nav flex-column">
+                <li class="nav-item py-2">
+                    <a href="" class="nav-link text-dark fs-5">បុរស</a>
+                </li>
+                <li class="nav-item py-2">
+                    <a href="" class="nav-link text-dark fs-5">នារី</a>
+                </li>
+                <li class="nav-item py-2">
+                    <a href="" class="nav-link text-dark fs-5">ក្មេងប្រុស</a>
+                </li>
+                <li class="nav-item py-2">
+                    <a href="" class="nav-link text-dark fs-5">ក្មេងស្រី</a>
+                </li>
+                <li class="nav-item py-2">
+                    <button class="btn fs-5">ចូលគណនី</button>
+                </li>
+                <li class="nav-item py-2">
+                    <button class="btn fs-5">ចុះឈ្មោះ</button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- search offcanvas -->
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" >
+        <div class="container">
+            <div class="offcanvas-header pt-5 pb-3 border-bottom border-dark">
+                <input type="text" placeholder="ស្វែងរកទំនិញ" class="form-control fs-5 shadow-none border-0">
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
         </div>
-     </header>
+    </div>
+
+    <!-- shop-card-items -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Card Items</h5>
+            <button type="button" class="btn-close shadow-none d-flex justify-content-start" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h3 class="text-shop d-flex justify-content-center">កន្រ្តកទំនិញរបស់អ្នកទទេ</h3>
+            <h6 class="text-items d-flex justify-content-center fs-4">តោះៗ! ចាប់ផ្តើម Shopping ទំនិញដែលទើបតែមកដល់ថ្មី និងទាន់សម័យ</h6>
+            ចាប់ផ្តើម Shopping
+        </div>
+    </div>
+    </header>
 
     <!-- main-content -->
-     <main>
-        <!-- banner -->
-        <div class="container-fluid p-0">
-            <div id="banner-image" class="container position-relative">
-                <img src="./assets/image/626728430_2077613749746744_521923027313068796_n.png" class="w-100 h-100 object-fit-cover" alt="banner-image">
-                 <!-- container banner -->
-                  <div class="position-absolute main-btnbanner w-100 d-flex justify-content-center pb-4 pb-md-0">
-                    <button id="btn-shop" class="btn mx-1 py-md-2 px-md-4 text-light border-3 border-light">SHOP MAN</button>
-                    <button id="btn-shop" class="btn mx-1 py-md-2 px-md-4 text-light border-3 border-light">SHOP WOMEN</button>
-                  </div>
-            </div>
+    <main>
+    <!-- banner -->
+    <div class="container-fluid p-0">
+        <div id="banner-image" class="container position-relative">
+            <img src="./assets/image/626728430_2077613749746744_521923027313068796_n.png" class="w-100 h-100 object-fit-cover" alt="banner-image">
+                <!-- container banner -->
+                <div class="position-absolute main-btnbanner w-100 d-flex justify-content-center pb-4 pb-md-0">
+                <button id="btn-shop" class="btn mx-1 py-md-2 px-md-4 text-light border-3 border-light">SHOP MAN</button>
+                <button id="btn-shop" class="btn mx-1 py-md-2 px-md-4 text-light border-3 border-light">SHOP WOMEN</button>
+                </div>
         </div>
+    </div>
 
         <!-- logo company -->
-         <div class="container d-flex overflow-hidden overflow-x-scroll py-1 px-0">
+        <div class="container d-flex overflow-hidden overflow-x-scroll py-1 px-0">
             <img id="logo-company" src="./assets/icons/Zando_Web-1.png" alt="">
             <img id="logo-company" src="./assets/icons/Ten11_Web-1.png" alt="">
             <img id="logo-company" src="./assets/icons/361_Web-1.png" alt="">
@@ -156,47 +159,221 @@
             <img id="logo-company" src="./assets/icons/TagSpace_Web-1.png" alt="">
             <img id="logo-company" src="./assets/icons/Sisburma_Web-1.png" alt="">
             <img id="logo-company" src="./assets/icons/Gatoni_Web-1.png" alt="">
-         </div>
+        </div>
 
-         <!-- second banner -->
-            <div id="carousel-banner" class="container bg-secondary p-0">
-                <div id="carouselExampleAutoplaying" class="carousel slide h-100" data-bs-ride="carousel">
-                    <div class="carousel-inner h-100">
-                        <div class="carousel-item h-100 active">
-                            <img src="./assets/image/638250385_1628963428103355_6301187022303058312_n.jpg" class="d-block h-100 w-100" alt="banner-first">
-                        </div>
-                        <div class="carousel-item h-100">
-                            <img src="./assets/image/634419954_3917447118549451_7627263290835726538_n.jpg" class="d-block w-100 h-100" alt="second banner">
-                        </div>
-                        <div class="carousel-item h-100">
-                            <img src="./assets/image/638127149_884838337714232_8718670010196790588_n.jpg" class="d-block w-100 h-100" alt="Third banner">
-                        </div>
-                        <div class="carousel-item h-100">
-                            <img src="./assets/image/639005377_3879551575515576_440872667524151088_n.jpg" class="d-block w-100 h-100" alt="Third banner">
-                        </div>
+        <!-- second banner -->
+        <div id="carousel-banner" class="container bg-secondary p-0">
+            <div id="carouselExampleAutoplaying" class="carousel slide h-100" data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item h-100 active">
+                        <img src="./assets/image/638250385_1628963428103355_6301187022303058312_n.jpg" class="d-block h-100 w-100" alt="banner-first">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item h-100">
+                        <img src="./assets/image/634419954_3917447118549451_7627263290835726538_n.jpg" class="d-block w-100 h-100" alt="second banner">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="./assets/image/638127149_884838337714232_8718670010196790588_n.jpg" class="d-block w-100 h-100" alt="Third banner">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="./assets/image/639005377_3879551575515576_440872667524151088_n.jpg" class="d-block w-100 h-100" alt="Third banner">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- best seller -->
+        <div class="container p-0 py-5">
+        <!-- text-title -->
+        <div class="container d-flex justify-content-between">
+            <h2>Best Seller items 🔥</h2>
+            <h4>Shop More</h4>
+        </div>
+
+        <!-- main-card -->
+            <div class="container row m-auto py-2 p-0">
+            <!-- card -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
+                <div class="card h-100 border border-0 rounded-3">
+                    <div class="card-image position-relative" style="height: 72%;">
+                        <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
+                        <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
+                    </div>
+                    <div class="card-detail p-3" style="height: 28%;">
+                        <!-- price & icom -->
+                        <div class="d-flex justify-content-between">
+                            <!-- price -->
+                                <h5 class="text-danger">US $11.55
+                                <del class="text-secondary">US $29.99</del>
+                                </h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart"></i>
+                        </div>
+                        <!-- title -->
+                            <h5>Products title</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn col-6 btn-success">Buy Now</button>
+                                <button class="btn col-4 btn-primary">Details</button>
+                            </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
+                <div class="card h-100 border border-0 rounded-3">
+                    <div class="card-image position-relative" style="height: 72%;">
+                        <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK7756-cr-450x672.jpg" alt="image">
+                        <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
+                    </div>
+                    <div class="card-detail p-3" style="height: 28%;">
+                        <!-- price & icom -->
+                        <div class="d-flex justify-content-between">
+                            <!-- price -->
+                                <h5 class="text-danger">US $11.55
+                                <del class="text-secondary">US $29.99</del>
+                                </h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart"></i>
+                        </div>
+                        <!-- title -->
+                            <h5>Products title</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn col-6 btn-success">Buy Now</button>
+                                <button class="btn col-4 btn-primary">Details</button>
+                            </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
+                <div class="card h-100 border border-0 rounded-3">
+                    <div class="card-image position-relative" style="height: 72%;">
+                        <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
+                        <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
+                    </div>
+                    <div class="card-detail p-3" style="height: 28%;">
+                        <!-- price & icom -->
+                        <div class="d-flex justify-content-between">
+                            <!-- price -->
+                                <h5 class="text-danger">US $11.55
+                                <del class="text-secondary">US $29.99</del>
+                                </h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart"></i>
+                        </div>
+                        <!-- title -->
+                            <h5>Products title</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn col-6 btn-success">Buy Now</button>
+                                <button class="btn col-4 btn-primary">Details</button>
+                            </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
+                <div class="card h-100 border border-0 rounded-3">
+                    <div class="card-image position-relative" style="height: 72%;">
+                        <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK7756-cr-450x672.jpg" alt="image">
+                        <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
+                    </div>
+                    <div class="card-detail p-3" style="height: 28%;">
+                        <!-- price & icom -->
+                        <div class="d-flex justify-content-between">
+                            <!-- price -->
+                                <h5 class="text-danger">US $11.55
+                                <del class="text-secondary">US $29.99</del>
+                                </h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart"></i>
+                        </div>
+                        <!-- title -->
+                            <h5>Products title</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn col-6 btn-success">Buy Now</button>
+                                <button class="btn col-4 btn-primary">Details</button>
+                            </div>
+                    </div>
+                </div>
                 </div>
             </div>
-        <!-- best seller -->
-         <div class="container p-0 py-3">
-            <!-- text-title -->
+        </div>
+            <!-- First Feature -->
+        <div class="container d-flex justify-content-around p-0 py-4">
+        <!-- main-card -->
+            <div class="container row m-auto p-0 d-flex justify-content-center">
+            <!-- card -->
+                <div class="col-12 col-md-6 col-lg-3" style="height: 500px; width: 380px;">
+                <div class="card h-100 border border-0 rounded-3">
+                    <div class="card-image position-relative" style="height: 100%;">
+                        <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
+                    </div>
+                    <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute" style=" left: 90px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">LIFESTYLE</a></button>
+                </div>
+                </div>
+                <!-- card -->
+                <div class="col-12 col-md-6 col-lg-3" style="height: 500px; width: 380px;">
+                    <div class="card h-100 border border-0 rounded-3">
+                        <div class="card-image position-relative" style="height: 100%;">
+                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
+                        </div>
+                        <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute" style=" left: 90px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">SPORTLIFE</a></button>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-12 col-md-6 col-lg-3" style="height: 500px; width: 380px;">
+                    <div class="card h-100 border border-0 rounded-3">
+                        <div class="card-image position-relative" style="height: 100%;">
+                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
+                        </div>
+                        <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute" style=" left: 45px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">SMART CASUAL</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second Feature -->
+        <div class="container d-flex justify-content-around p-0 py-4">
+            <!-- main-card -->
+            <div class="container row m-auto p-0 d-flex justify-content-center">
+                <!-- card -->
+                <div class="col-12 col-md-6" style="height: 500px; width: 380px;">
+                    <div class="card h-100 border border-0 rounded-3">
+                        <div class="card-image position-relative" style="height: 100%;">
+                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
+                        </div>
+                        <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute" style=" left: 125px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">TOPS</a></button>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-12 col-md-6" style="height: 500px; width: 380px;">
+                    <div class="card h-100 border border-0 rounded-3">
+                        <div class="card-image position-relative" style="height: 100%;">
+                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
+                        </div>
+                        <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute d-flex justify-content-center" style="left: 120px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">SHOES</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- men shop -->
+        <div class="container p-0 py-3">
+        <!-- text-title -->
             <div class="container d-flex justify-content-between">
-                <h2>Best Seller items 🔥</h2>
+                <h2>Men Shop items 🔥</h2>
                 <h4>Shop More</h4>
             </div>
 
             <!-- main-card -->
-             <div class="container row m-auto py-3 p-0">
+            <div class="container row m-auto py-3 p-0">
                 <!-- card -->
-                 <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
+                <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
                     <div class="card h-100 border border-0 rounded-3">
                         <div class="card-image position-relative" style="height: 72%;">
                             <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
@@ -206,49 +383,23 @@
                             <!-- price & icom -->
                             <div class="d-flex justify-content-between">
                                 <!-- price -->
-                                 <h5 class="text-danger">US $11.55
+                                <h5 class="text-danger">US $11.55
                                     <del class="text-secondary">US $29.99</del>
-                                 </h5>
-                                 <!-- icon -->
-                                  <i class="bi bi-heart"></i>
+                                </h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart"></i>
                             </div>
                             <!-- title -->
-                             <h5>Products title</h5>
-                             <!-- button -->
-                              <div class="d-flex justify-content-between mt-2">
+                            <h5>Products title</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between mt-2">
                                     <button class="btn col-6 btn-success">Buy Now</button>
                                     <button class="btn col-4 btn-primary">Details</button>
-                              </div>
-                        </div>
-                    </div>
-                 </div>
-                  <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
-                    <div class="card h-100 border border-0 rounded-3">
-                        <div class="card-image position-relative" style="height: 72%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK7756-cr-450x672.jpg" alt="image">
-                            <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
-                        </div>
-                        <div class="card-detail p-3" style="height: 28%;">
-                            <!-- price & icom -->
-                            <div class="d-flex justify-content-between">
-                                <!-- price -->
-                                 <h5 class="text-danger">US $11.55
-                                    <del class="text-secondary">US $29.99</del>
-                                 </h5>
-                                 <!-- icon -->
-                                  <i class="bi bi-heart"></i>
                             </div>
-                            <!-- title -->
-                             <h5>Products title</h5>
-                             <!-- button -->
-                              <div class="d-flex justify-content-between mt-2">
-                                    <button class="btn col-6 btn-success">Buy Now</button>
-                                    <button class="btn col-4 btn-primary">Details</button>
-                              </div>
                         </div>
                     </div>
-                 </div>
-                  <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
                     <div class="card h-100 border border-0 rounded-3">
                         <div class="card-image position-relative" style="height: 72%;">
                             <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
@@ -258,291 +409,196 @@
                             <!-- price & icom -->
                             <div class="d-flex justify-content-between">
                                 <!-- price -->
-                                 <h5 class="text-danger">US $11.55
+                                <h5 class="text-danger">US $11.55
                                     <del class="text-secondary">US $29.99</del>
-                                 </h5>
-                                 <!-- icon -->
-                                  <i class="bi bi-heart"></i>
+                                </h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart"></i>
                             </div>
                             <!-- title -->
-                             <h5>Products title</h5>
-                             <!-- button -->
-                              <div class="d-flex justify-content-between mt-2">
+                            <h5>Products title</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between mt-2">
                                     <button class="btn col-6 btn-success">Buy Now</button>
                                     <button class="btn col-4 btn-primary">Details</button>
-                              </div>
+                            </div>
                         </div>
                     </div>
-                 </div>
-                  <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
                     <div class="card h-100 border border-0 rounded-3">
                         <div class="card-image position-relative" style="height: 72%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK7756-cr-450x672.jpg" alt="image">
+                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
                             <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
                         </div>
                         <div class="card-detail p-3" style="height: 28%;">
                             <!-- price & icom -->
                             <div class="d-flex justify-content-between">
                                 <!-- price -->
-                                 <h5 class="text-danger">US $11.55
+                                <h5 class="text-danger">US $11.55
                                     <del class="text-secondary">US $29.99</del>
-                                 </h5>
-                                 <!-- icon -->
-                                  <i class="bi bi-heart"></i>
+                                </h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart"></i>
                             </div>
                             <!-- title -->
-                             <h5>Products title</h5>
-                             <!-- button -->
-                              <div class="d-flex justify-content-between mt-2">
+                            <h5>Products title</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between mt-2">
                                     <button class="btn col-6 btn-success">Buy Now</button>
                                     <button class="btn col-4 btn-primary">Details</button>
-                              </div>
+                            </div>
                         </div>
                     </div>
-                 </div>
-             </div>
-         </div>
-         <!-- Feature -->
-         <div class="container p-0 py-3">
-            
-         </div>
-         <!-- men shop -->
-          <div class="container p-0 py-3">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
+                    <div class="card h-100 border border-0 rounded-3">
+                        <div class="card-image position-relative" style="height: 72%;">
+                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
+                        </div>
+                        <div class="card-detail p-3" style="height: 28%;">
+                            <!-- price & icom -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $11.55
+                                    <del class="text-secondary">US $29.99</del>
+                                </h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                            <h5>Products title</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between mt-2">
+                                    <button class="btn col-6 btn-success">Buy Now</button>
+                                    <button class="btn col-4 btn-primary">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- women shop -->
+        <div class="container p-0 py-3">
             <!-- text-title -->
             <div class="container d-flex justify-content-between">
-                <h2>Best Seller items 🔥</h2>
+                <h2>Women Shop items 🔥</h2>
                 <h4>Shop More</h4>
             </div>
 
             <!-- main-card -->
-             <div class="container row m-auto py-3 p-0">
-                <!-- card -->
-                 <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
-                    <div class="card h-100 border border-0 rounded-3">
-                        <div class="card-image position-relative" style="height: 72%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
-                            <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
-                        </div>
-                        <div class="card-detail p-3" style="height: 28%;">
-                            <!-- price & icom -->
-                            <div class="d-flex justify-content-between">
-                                <!-- price -->
-                                 <h5 class="text-danger">US $11.55
-                                    <del class="text-secondary">US $29.99</del>
-                                 </h5>
-                                 <!-- icon -->
-                                  <i class="bi bi-heart"></i>
-                            </div>
-                            <!-- title -->
-                             <h5>Products title</h5>
-                             <!-- button -->
-                              <div class="d-flex justify-content-between mt-2">
-                                    <button class="btn col-6 btn-success">Buy Now</button>
-                                    <button class="btn col-4 btn-primary">Details</button>
-                              </div>
-                        </div>
+            <div class="container row m-auto py-3 p-0">
+            <!-- card -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
+                <div class="card h-100 border border-0 rounded-3">
+                    <div class="card-image position-relative" style="height: 72%;">
+                        <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/ZANDO03.06.20252350-cr-450x672.jpg" alt="image">
+                        <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
                     </div>
-                 </div>
-                  <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
-                    <div class="card h-100 border border-0 rounded-3">
-                        <div class="card-image position-relative" style="height: 72%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
-                            <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
+                    <div class="card-detail p-3" style="height: 28%;">
+                        <!-- price & icom -->
+                        <div class="d-flex justify-content-between">
+                            <!-- price -->
+                                <h5 class="text-danger">US $11.55
+                                <del class="text-secondary">US $29.99</del>
+                                </h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart"></i>
                         </div>
-                        <div class="card-detail p-3" style="height: 28%;">
-                            <!-- price & icom -->
-                            <div class="d-flex justify-content-between">
-                                <!-- price -->
-                                 <h5 class="text-danger">US $11.55
-                                    <del class="text-secondary">US $29.99</del>
-                                 </h5>
-                                 <!-- icon -->
-                                  <i class="bi bi-heart"></i>
+                        <!-- title -->
+                            <h5>Products title</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn col-6 btn-success">Buy Now</button>
+                                <button class="btn col-4 btn-primary">Details</button>
                             </div>
-                            <!-- title -->
-                             <h5>Products title</h5>
-                             <!-- button -->
-                              <div class="d-flex justify-content-between mt-2">
-                                    <button class="btn col-6 btn-success">Buy Now</button>
-                                    <button class="btn col-4 btn-primary">Details</button>
-                              </div>
-                        </div>
                     </div>
-                 </div>
-                  <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
-                    <div class="card h-100 border border-0 rounded-3">
-                        <div class="card-image position-relative" style="height: 72%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
-                            <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
+                <div class="card h-100 border border-0 rounded-3">
+                    <div class="card-image position-relative" style="height: 72%;">
+                        <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK7756-cr-450x672.jpg" alt="image">
+                        <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
+                    </div>
+                    <div class="card-detail p-3" style="height: 28%;">
+                        <!-- price & icom -->
+                        <div class="d-flex justify-content-between">
+                            <!-- price -->
+                                <h5 class="text-danger">US $11.55
+                                <del class="text-secondary">US $29.99</del>
+                                </h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart"></i>
                         </div>
-                        <div class="card-detail p-3" style="height: 28%;">
-                            <!-- price & icom -->
-                            <div class="d-flex justify-content-between">
-                                <!-- price -->
-                                 <h5 class="text-danger">US $11.55
-                                    <del class="text-secondary">US $29.99</del>
-                                 </h5>
-                                 <!-- icon -->
-                                  <i class="bi bi-heart"></i>
+                        <!-- title -->
+                            <h5>Products title</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn col-6 btn-success">Buy Now</button>
+                                <button class="btn col-4 btn-primary">Details</button>
                             </div>
-                            <!-- title -->
-                             <h5>Products title</h5>
-                             <!-- button -->
-                              <div class="d-flex justify-content-between mt-2">
-                                    <button class="btn col-6 btn-success">Buy Now</button>
-                                    <button class="btn col-4 btn-primary">Details</button>
-                              </div>
-                        </div>
                     </div>
-                 </div>
-                  <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
-                    <div class="card h-100 border border-0 rounded-3">
-                        <div class="card-image position-relative" style="height: 72%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
-                            <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
+                <div class="card h-100 border border-0 rounded-3">
+                    <div class="card-image position-relative" style="height: 72%;">
+                        <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/ZANDO03.06.20252350-cr-450x672.jpg" alt="image">
+                        <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
+                    </div>
+                    <div class="card-detail p-3" style="height: 28%;">
+                        <!-- price & icom -->
+                        <div class="d-flex justify-content-between">
+                            <!-- price -->
+                                <h5 class="text-danger">US $11.55
+                                <del class="text-secondary">US $29.99</del>
+                                </h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart"></i>
                         </div>
-                        <div class="card-detail p-3" style="height: 28%;">
-                            <!-- price & icom -->
-                            <div class="d-flex justify-content-between">
-                                <!-- price -->
-                                 <h5 class="text-danger">US $11.55
-                                    <del class="text-secondary">US $29.99</del>
-                                 </h5>
-                                 <!-- icon -->
-                                  <i class="bi bi-heart"></i>
+                        <!-- title -->
+                            <h5>Products title</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn col-6 btn-success">Buy Now</button>
+                                <button class="btn col-4 btn-primary">Details</button>
                             </div>
-                            <!-- title -->
-                             <h5>Products title</h5>
-                             <!-- button -->
-                              <div class="d-flex justify-content-between mt-2">
-                                    <button class="btn col-6 btn-success">Buy Now</button>
-                                    <button class="btn col-4 btn-primary">Details</button>
-                              </div>
-                        </div>
                     </div>
-                 </div>
-             </div>
-         </div>
-          <!-- women shop -->
-           <div class="container p-0 py-3">
-            <!-- text-title -->
-            <div class="container d-flex justify-content-between">
-                <h2>Best Seller items 🔥</h2>
-                <h4>Shop More</h4>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
+                <div class="card h-100 border border-0 rounded-3">
+                    <div class="card-image position-relative" style="height: 72%;">
+                        <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK7756-cr-450x672.jpg" alt="image">
+                        <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
+                    </div>
+                    <div class="card-detail p-3" style="height: 28%;">
+                        <!-- price & icom -->
+                        <div class="d-flex justify-content-between">
+                            <!-- price -->
+                                <h5 class="text-danger">US $11.55
+                                <del class="text-secondary">US $29.99</del>
+                                </h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart"></i>
+                        </div>
+                        <!-- title -->
+                            <h5>Products title</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between mt-2">
+                                <button class="btn col-6 btn-success">Buy Now</button>
+                                <button class="btn col-4 btn-primary">Details</button>
+                            </div>
+                    </div>
+                </div>
+                </div>
             </div>
+        </div>
 
-            <!-- main-card -->
-             <div class="container row m-auto py-3 p-0">
-                <!-- card -->
-                 <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
-                    <div class="card h-100 border border-0 rounded-3">
-                        <div class="card-image position-relative" style="height: 72%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/ZANDO03.06.20252350-cr-450x672.jpg" alt="image">
-                            <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
-                        </div>
-                        <div class="card-detail p-3" style="height: 28%;">
-                            <!-- price & icom -->
-                            <div class="d-flex justify-content-between">
-                                <!-- price -->
-                                 <h5 class="text-danger">US $11.55
-                                    <del class="text-secondary">US $29.99</del>
-                                 </h5>
-                                 <!-- icon -->
-                                  <i class="bi bi-heart"></i>
-                            </div>
-                            <!-- title -->
-                             <h5>Products title</h5>
-                             <!-- button -->
-                              <div class="d-flex justify-content-between mt-2">
-                                    <button class="btn col-6 btn-success">Buy Now</button>
-                                    <button class="btn col-4 btn-primary">Details</button>
-                              </div>
-                        </div>
-                    </div>
-                 </div>
-                  <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
-                    <div class="card h-100 border border-0 rounded-3">
-                        <div class="card-image position-relative" style="height: 72%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK7756-cr-450x672.jpg" alt="image">
-                            <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
-                        </div>
-                        <div class="card-detail p-3" style="height: 28%;">
-                            <!-- price & icom -->
-                            <div class="d-flex justify-content-between">
-                                <!-- price -->
-                                 <h5 class="text-danger">US $11.55
-                                    <del class="text-secondary">US $29.99</del>
-                                 </h5>
-                                 <!-- icon -->
-                                  <i class="bi bi-heart"></i>
-                            </div>
-                            <!-- title -->
-                             <h5>Products title</h5>
-                             <!-- button -->
-                              <div class="d-flex justify-content-between mt-2">
-                                    <button class="btn col-6 btn-success">Buy Now</button>
-                                    <button class="btn col-4 btn-primary">Details</button>
-                              </div>
-                        </div>
-                    </div>
-                 </div>
-                  <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
-                    <div class="card h-100 border border-0 rounded-3">
-                        <div class="card-image position-relative" style="height: 72%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/ZANDO03.06.20252350-cr-450x672.jpg" alt="image">
-                            <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
-                        </div>
-                        <div class="card-detail p-3" style="height: 28%;">
-                            <!-- price & icom -->
-                            <div class="d-flex justify-content-between">
-                                <!-- price -->
-                                 <h5 class="text-danger">US $11.55
-                                    <del class="text-secondary">US $29.99</del>
-                                 </h5>
-                                 <!-- icon -->
-                                  <i class="bi bi-heart"></i>
-                            </div>
-                            <!-- title -->
-                             <h5>Products title</h5>
-                             <!-- button -->
-                              <div class="d-flex justify-content-between mt-2">
-                                    <button class="btn col-6 btn-success">Buy Now</button>
-                                    <button class="btn col-4 btn-primary">Details</button>
-                              </div>
-                        </div>
-                    </div>
-                 </div>
-                  <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
-                    <div class="card h-100 border border-0 rounded-3">
-                        <div class="card-image position-relative" style="height: 72%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK7756-cr-450x672.jpg" alt="image">
-                            <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 15px;">-15%</button>
-                        </div>
-                        <div class="card-detail p-3" style="height: 28%;">
-                            <!-- price & icom -->
-                            <div class="d-flex justify-content-between">
-                                <!-- price -->
-                                 <h5 class="text-danger">US $11.55
-                                    <del class="text-secondary">US $29.99</del>
-                                 </h5>
-                                 <!-- icon -->
-                                  <i class="bi bi-heart"></i>
-                            </div>
-                            <!-- title -->
-                             <h5>Products title</h5>
-                             <!-- button -->
-                              <div class="d-flex justify-content-between mt-2">
-                                    <button class="btn col-6 btn-success">Buy Now</button>
-                                    <button class="btn col-4 btn-primary">Details</button>
-                              </div>
-                        </div>
-                    </div>
-                 </div>
-             </div>
-         </div>
-
-         <!-- map & contact -->
-          <div class="container-fluid w-100 h-100">
+        <!-- map & contact -->
+        <div class="container-fluid w-100 h-100">
                 <h2 class="text-center">Contact Us</h2>
                 <!-- main container -->
                 <div class="container row m-auto p-0 mt-5 w-100 h-100">
@@ -570,14 +626,14 @@
                         </form>
                     </div>
                 </div>
-          </div>
-     </main>
+        </div>
+    </main>
 
-     <!-- footer -->
-      <footer class="container-fluid border-top p-0">
+    <!-- footer -->
+    <footer class="container-fluid border-top p-0">
             <div class="container p-0">
                 <!-- media -->
-                 <div class="container row m-auto py-5 p-0">
+                <div class="container row m-auto py-5 p-0">
                     <div class="col-12 col-md-4">
                         <h2 class="fw-bold py-3 pb-3">Zando Shop</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magnam laboriosam debitis similique quasi, placeat ea, aliquam enim vitae ratione sit pariatur possimus quia eos quae, iure magni! Maxime, a.
@@ -595,9 +651,9 @@
                         </p>
                         <input type="text" class="form-control shadow-none bg-primary text-light py-2 w-100" placeholder="Your email address" name="" id="">
                     </div>
-                 </div>
+                </div>
             </div>
             <h5 class="text-center py-4 m-0 px-3" style="background-color: wheat;">Zando Shop. All Right reserved | Build by Mach Bunneng</h5>
-      </footer>
+    </footer>
 </body>
 </html>
