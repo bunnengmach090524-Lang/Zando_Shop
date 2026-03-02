@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#banner-image {
+    height: 90vh;
+}
+.main-btnbanner {
+    position: absolute;
+    bottom: 10px;
+    gap: 15px;
+}
+
+#btn-shop{
+    transition: all .4s ease-in-out;
+}
+#btn-shop:hover {
+    box-shadow: 0px 7px 14px rgb(21, 21, 21);
+    transition: all .4s ease-in-out;
+    transform: translateY(-7px);
+}
+
+#logo-company {
+    width: 200px;
+}
+
+#carousel-banner {
+    height: 340px;
+}
+
+@media screen and (max-width: 428px) {
+    #banner-image {
+        height: 20vh;
+    }
+    #logo-company {
+        width: 70px;
+    }
+    #carousel-banner {
+        height: 100px;
+    }
+}
+@media screen and (max-width:576px) {
+    #banner-image {
+        height: 50vh;
+    }
+    #logo-company {
+        width: 100px;
+    }
+
+    #carousel-banner {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width: 992px) {
+    #banner-image {
+        height: 40vh;
+    }
+    #logo-company {
+        width: 150px;
+    }
+    #carousel-banner {
+        height: 300px;
+    }
+}
