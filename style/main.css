@@ -7,7 +7,84 @@
     transition: all 0.5s ease-in-out;
     transform: scale(1.1);
 }
+/* switch */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --switch-on: #2ecc71; /* Green from your screenshot */
+  --switch-off: #ccc;
+}
 
+/* Dark Mode Variables */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  transition: background 0.3s ease;
+}
+
+.settings-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.settings-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 15px;
+}
+
+.title { margin: 0; font-size: 1.2rem; }
+.subtitle { margin: 5px 0 0; color: #3498db; font-size: 0.9rem; }
+
+/* The Switch Box */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  left: 200px;
+}
+
+/* Hide default checkbox */
+.switch input { opacity: 0; width: 0; height: 0; }
+
+/* The Slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--switch-off);
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px; width: 18px;
+  left: 4px; bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* When checked (Green state) */
+input:checked + .slider {
+  background-color: var(--switch-on);
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
 /* login Modal */
 .modal-overlay {
     display: none; 
@@ -58,5 +135,12 @@
 
 .close-x { position: absolute; top: 15px; right: 20px; font-size: 24px; cursor: pointer; color: #aaa; z-index: 10; }
 .back-to-settings { text-align: center; color: #888; font-size: 13px; margin-top: 15px; cursor: pointer; }
-
+.list-shop {
+    position: relative;
+    left: 110px;
+}
+.list-shop-que {
+    position: relative;
+    left: 28px;
+}
 @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
