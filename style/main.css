@@ -1,3 +1,62 @@
 .card > .lifestyle {
     background-color: rgba(63, 66, 66, 0.863);
+    transition: all 0.5s ease-in-out;
 }
+
+.card > .lifestyle:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+/* login Modal */
+.modal-overlay {
+    display: none; 
+    position: fixed; 
+    inset: 0;
+    background: rgba(0,0,0,0.5); 
+    backdrop-filter: blur(10px);
+    z-index: 9999; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.modal-card {
+    background: #fff; 
+    width: 92%; 
+    max-width: 420px;
+    border-radius: 20px; 
+    overflow: hidden; 
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.modal-view { display: none; padding: 25px; max-height: 85vh; overflow-y: auto; }
+.modal-view.active { display: block; animation: slideUp 0.3s ease-out; }
+
+/* Settings View Styles */
+.welcome-box { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 20px; }
+.auth-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
+.btn-line { border: 1.5px solid #000; background: #fff; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; }
+.btn-solid { background: #000; color: #fff; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; }
+
+/* Auth Tab Styles (Image 1 Style) */
+.auth-tabs { display: flex; border-bottom: 1px solid #eee; margin-bottom: 20px; }
+.tab-btn { flex: 1; padding: 15px; border: none; background: none; font-weight: bold; color: #999; cursor: pointer; transition: 0.3s; }
+.tab-btn.active { color: #000; border-bottom: 3px solid #000; }
+
+.auth-sub-view { display: none; }
+.auth-sub-view.active { display: block; }
+
+/* Forms & Grid */
+.input-field { margin-bottom: 15px; }
+.input-field label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; }
+.input-field input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; outline: none; }
+.grid-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.btn-black-full { width: 100%; background: #000; color: #fff; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
+
+.social-btn { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; background: #fff; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 500; cursor: pointer; }
+
+.close-x { position: absolute; top: 15px; right: 20px; font-size: 24px; cursor: pointer; color: #aaa; z-index: 10; }
+.back-to-settings { text-align: center; color: #888; font-size: 13px; margin-top: 15px; cursor: pointer; }
+
+@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }

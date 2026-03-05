@@ -58,8 +58,8 @@
             </div>
             <div class="navbar gap-4 d-none d-lg-flex">
                 <!-- button login and register -->
-                <button class="btn btn-primary">ចូលគណនី</button>
-                <button class="btn btn-primary">ចុះឈ្មោះ</button>
+                <button class="btn btn-primary" onclick="openModal('settings')">ចូលគណនី</button>
+                <button class="btn btn-primary" onclick="openModal('settings')">ចុះឈ្មោះ</button>
             </div>
             <i class="bi bi-list fs-1 d-none w-auto" data-bs-toggle="offcanvas" data-bs-target="#sidebar"></i>
         </div> 
@@ -101,10 +101,10 @@
                     <a href="" class="nav-link text-dark fs-5">ក្មេងស្រី</a>
                 </li>
                 <li class="nav-item py-2">
-                    <button class="btn fs-5">ចូលគណនី</button>
+                    <button class="btn fs-5" onclick="openModal('settings')">ចូលគណនី</button>
                 </li>
                 <li class="nav-item py-2">
-                    <button class="btn fs-5">ចុះឈ្មោះ</button>
+                    <button class="btn fs-5" onclick="openModal('settings')">ចុះឈ្មោះ</button>
                 </li>
             </ul>
         </div>
@@ -135,19 +135,100 @@
     </div>
     </header>
 
-    <!-- main-content -->
-    <main>
-    <!-- banner -->
-    <div class="container-fluid p-0">
-        <div id="banner-image" class="container position-relative">
-            <img src="./assets/image/626728430_2077613749746744_521923027313068796_n.png" class="w-100 h-100 object-fit-cover" alt="banner-image">
-                <!-- container banner -->
-                <div class="position-absolute main-btnbanner w-100 d-flex justify-content-center pb-4 pb-md-0">
-                <button id="btn-shop" class="btn mx-1 py-md-2 px-md-4 text-light border-3 border-light">SHOP MAN</button>
-                <button id="btn-shop" class="btn mx-1 py-md-2 px-md-4 text-light border-3 border-light">SHOP WOMEN</button>
+    <div id="unifiedModal" class="modal-overlay">
+        <div class="modal-card">
+            <span class="close-x" onclick="closeModal()">&times;</span>
+
+            <div id="view-settings" class="modal-view active">
+                <div class="modal-header-simple">
+                    <h3>គណនី</h3>
                 </div>
+                <div class="welcome-box">
+                    <p class="kh-bold">ចូលរួមឥឡូវនេះ!</p>
+                    <p class="sub-text">Unlock Your Fashion Journey With Us!</p>
+                    <div class="auth-btns">
+                        <button class="btn-line" onclick="openModal('register')">ចុះឈ្មោះ</button>
+                        <button class="btn-solid" onclick="openModal('login')">ចូលគណនី</button>
+                    </div>
+                </div>
+                
+                <div class="menu-list">
+                    <h5 class="label fw-bold">ការបញ្ជាទិញចាស់ៗ</h5>
+                    <div class="menu-item">ការបញ្ជាទិញរបស់ខ្ញុំ <i class="bi bi-chevron-right mx-5 fw-bold"></i></div>
+                    <h5 class="label fw-bold">ការបញ្ជាទិញចាស់ៗ</h5>
+                    <!-- <div class="menu-item">សមាជិកភាព និងអត្ថប្រយោជន៍ <i class="bi bi-chevron-right"></i></div> -->
+                    <hr>
+                    <h5 class="label fw-bold">ភាសា / Languages</h5>
+                    <div class="lang-options d-flex justify-content-around gap-5">
+                        <label>English <input type="radio" name="L"><span></span></label>
+                        <label class="active">ខ្មែរ <input type="radio" name="L" checked><span></span></label>
+                        <label>中国 <input type="radio" name="L"><span></span></label>
+                    </div>
+                    <h5 class="label fw-bold">ភាសា / Languages</h5>
+                    <h5 class="label fw-bold">ជំនួយ</h5>
+                    <h5 class="label fw-bold">កំណត់ Settings</h5>
+
+                </div>
+            </div>
+
+            <div id="view-auth" class="modal-view">
+                <div class="auth-tabs">
+                    <button id="tab-login" class="tab-btn" onclick="switchAuthTab('login')">ចូលគណនី</button>
+                    <button id="tab-register" class="tab-btn" onclick="switchAuthTab('register')">ចុះឈ្មោះ</button>
+                </div>
+
+                <div id="form-login" class="auth-sub-view">
+                    <div class="input-field">
+                        <label>លេខទូរស័ព្ទ</label>
+                        <input type="text" placeholder="បញ្ចូលលេខទូរស័ព្ទ">
+                    </div>
+                    <div class="input-field">
+                        <label>ពាក្យសម្ងាត់</label>
+                        <div class="pass-box">
+                            <input type="password" placeholder="បញ្ចូលពាក្យសម្ងាត់">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-black-full">ចូលគណនី</button>
+                    <p class="forgot-link">ភ្លេចពាក្យសម្ងាត់?</p>
+                </div>
+
+                <div id="form-register" class="auth-sub-view">
+                    <div class="gender-pick">
+                        <span>ភេទ (ទាមទារ):</span>
+                        <label><input type="radio" name="g"> ប្រុស</label>
+                        <label><input type="radio" name="g"> ស្រី</label>
+                    </div>
+                    <div class="grid-row">
+                        <div class="input-field"><label>នាមខ្លួន</label><input type="text" placeholder="បញ្ចូលនាមខ្លួន"></div>
+                        <div class="input-field"><label>នាមត្រកូល</label><input type="text" placeholder="បញ្ចូលឈ្មោះ"></div>
+                    </div>
+                    <div class="input-field"><label>លេខទូរស័ព្ទ</label><input type="text" placeholder="បញ្ចូលលេខទូរស័ព្ទ"></div>
+                    <div class="input-field"><label>អ៊ីម៉ែល</label><input type="email" placeholder="បញ្ចូលអ៊ីម៉ែល"></div>
+                    <button type="submit" class="btn-black-full">បង្កើតគណនី</button>
+                </div>
+
+                <div class="divider"><span>ឬក៏</span></div>
+                <button class="social-btn"><img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" width="16"> បន្តជាមួយ Google</button>
+                <button class="social-btn"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" width="16"> បន្តជាមួយ Facebook</button>
+                
+                <p class="back-to-settings" onclick="openModal('settings')">← ត្រឡប់ទៅការកំណត់</p>
+            </div>
         </div>
     </div>
+    <!-- main-content -->
+    <main>
+        <!-- banner -->
+        <div class="container-fluid p-0">
+            <div id="banner-image" class="container position-relative">
+                <img src="./assets/image/626728430_2077613749746744_521923027313068796_n.png" class="w-100 h-100 object-fit-cover" alt="banner-image">
+                    <!-- container banner -->
+                    <div class="position-absolute main-btnbanner w-100 d-flex justify-content-center pb-4 pb-md-0">
+                    <button id="btn-shop" class="btn mx-1 py-md-2 px-md-4 text-light border-3 border-light">SHOP MAN</button>
+                    <button id="btn-shop" class="btn mx-1 py-md-2 px-md-4 text-light border-3 border-light">SHOP WOMEN</button>
+                    </div>
+            </div>
+        </div>
 
         <!-- logo company -->
         <div class="container d-flex overflow-hidden overflow-x-scroll py-1 px-0">
@@ -189,14 +270,14 @@
             </div>
         </div>
         <!-- best seller -->
-        <div class="container p-0 py-5">
-        <!-- text-title -->
-        <div class="container d-flex justify-content-between">
-            <h2>Best Seller items 🔥</h2>
-            <h4>Shop More</h4>
-        </div>
+        <div class="container p-0 py-5 ">
+            <!-- text-title -->
+            <div class="container d-flex justify-content-between">
+                <h2>Best Seller items 🔥</h2>
+                <h4>Shop More</h4>
+            </div>
 
-        <!-- main-card -->
+            <!-- main-card -->
             <div class="container row m-auto py-2 p-0">
             <!-- card -->
                 <div class="col-12 col-md-6 col-lg-3 mb-4" style="height: 500px;">
@@ -310,30 +391,30 @@
         <!-- main-card -->
             <div class="container row m-auto p-0 d-flex justify-content-center">
             <!-- card -->
-                <div class="col-12 col-md-6 col-lg-3" style="height: 500px; width: 380px;">
+                <div class="col-12 col-md-6 col-lg-3 mb-5" style="height: 500px; width: 380px;">
                 <div class="card h-100 border border-0 rounded-3">
                     <div class="card-image position-relative" style="height: 100%;">
-                        <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
+                        <a href=""><img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/gt.jpg" alt="image"></a>
                     </div>
-                    <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute" style=" left: 90px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">LIFESTYLE</a></button>
+                    <!-- <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute" style=" left: 90px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">LIFESTYLE</a></button> -->
                 </div>
+                </div>
+                <!-- card -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5" style="height: 500px; width: 380px;">
+                    <div class="card h-100 border border-0 rounded-3">
+                        <div class="card-image position-relative" style="height: 100%;">
+                            <a href=""><img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/yq.jpg" alt="image"></a>
+                        </div>
+                        <!-- <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute" style=" left: 90px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">SPORTLIFE</a></button> -->
+                    </div>
                 </div>
                 <!-- card -->
                 <div class="col-12 col-md-6 col-lg-3" style="height: 500px; width: 380px;">
                     <div class="card h-100 border border-0 rounded-3">
                         <div class="card-image position-relative" style="height: 100%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
+                            <a href=""><img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/jp (1).jpg" alt="image"></a>
                         </div>
-                        <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute" style=" left: 90px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">SPORTLIFE</a></button>
-                    </div>
-                </div>
-                <!-- card -->
-                <div class="col-12 col-md-6 col-lg-3" style="height: 500px; width: 380px;">
-                    <div class="card h-100 border border-0 rounded-3">
-                        <div class="card-image position-relative" style="height: 100%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
-                        </div>
-                        <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute" style=" left: 45px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">SMART CASUAL</a></button>
+                        <!-- <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute" style=" left: 45px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">SMART CASUAL</a></button> -->
                     </div>
                 </div>
             </div>
@@ -343,21 +424,21 @@
             <!-- main-card -->
             <div class="container row m-auto p-0 d-flex justify-content-center">
                 <!-- card -->
-                <div class="col-12 col-md-6" style="height: 500px; width: 380px;">
+                <div class="col-12 col-md-6 mb-5" style="height: 500px; width: 380px;">
                     <div class="card h-100 border border-0 rounded-3">
                         <div class="card-image position-relative" style="height: 100%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
+                            <a href=""><img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/Tops.jpg" alt="image"></a>
                         </div>
-                        <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute" style=" left: 125px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">TOPS</a></button>
+                        <!-- <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute" style=" left: 125px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">TOPS</a></button> -->
                     </div>
                 </div>
                 <!-- card -->
                 <div class="col-12 col-md-6" style="height: 500px; width: 380px;">
                     <div class="card h-100 border border-0 rounded-3">
                         <div class="card-image position-relative" style="height: 100%;">
-                            <img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/PTAK4850-cr-450x672.jpg" alt="image">
+                            <a href=""><img class="w-100 h-100 object-fit-cover rounded-3" src="./assets/image/Shoes.jpg" alt="image"></a>
                         </div>
-                        <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute d-flex justify-content-center" style="left: 120px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">SHOES</a></button>
+                        <!-- <button class="lifestyle btn btn-secondary py-0 fw-bold position-absolute d-flex justify-content-center" style="left: 120px; bottom: 35px;"><a class="text-light text-decoration-none fs-2" href="">SHOES</a></button> -->
                     </div>
                 </div>
             </div>
@@ -656,4 +737,5 @@
             <h5 class="text-center py-4 m-0 px-3" style="background-color: wheat;">Zando Shop. All Right reserved | Build by Mach Bunneng</h5>
     </footer>
 </body>
+    <script src="./js/script.js"></script>
 </html>
